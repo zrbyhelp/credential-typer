@@ -12,6 +12,23 @@
 - 密码以字节帧传输和注入，发送后立即清零，不写入日志、剪贴板或磁盘。
 - 支持账号导入、搜索同步、断线 KK 重连，以及不依赖 .NET 安装的 Windows 单文件发布。
 
+## App 界面预览
+
+手机端采用 Material 风格的简洁布局：先解锁保险库，再从账户列表进入详情；账号、密码和备注分区展示，常用的填充操作固定在详情页下方。
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/01-unlock.jpg" width="210" alt="解锁保险库" /><br />解锁保险库</td>
+    <td align="center"><img src="docs/screenshots/02-accounts.jpg" width="210" alt="账户列表" /><br />账户列表与桌面连接状态</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/03-account-detail.jpg" width="210" alt="账户详情与填充" /><br />账户详情与填充</td>
+    <td align="center"><img src="docs/screenshots/04-add-account.jpg" width="210" alt="新增账户" /><br />新增账户</td>
+  </tr>
+</table>
+
+截图中的账号和密码均为演示数据并已做遮挡处理；实际使用时请勿把含真实凭据的截图提交到 issue 或 pull request。
+
 ## 仓库结构
 
 ```text

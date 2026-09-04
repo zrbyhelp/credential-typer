@@ -5,6 +5,18 @@
 手机保险库 + Noise 加密传输，向已配对 PC 的当前焦点输入框注入账号/密码。
 与桌面 C# 端（`../desktop`）按 [`../PROTOCOL.md`](../PROTOCOL.md) 同一协议实现，可互通。
 
+## 界面预览
+
+| 解锁 | 账户列表 |
+| --- | --- |
+| <img src="../docs/screenshots/01-unlock.jpg" width="210" alt="解锁保险库" /> | <img src="../docs/screenshots/02-accounts.jpg" width="210" alt="账户列表" /> |
+
+| 账户详情与填充 | 新增账户 |
+| --- | --- |
+| <img src="../docs/screenshots/03-account-detail.jpg" width="210" alt="账户详情" /> | <img src="../docs/screenshots/04-add-account.jpg" width="210" alt="新增账户" /> |
+
+截图仅用于展示布局，账号和密码均为演示数据并已遮挡。
+
 ## 结构
 
 ```
