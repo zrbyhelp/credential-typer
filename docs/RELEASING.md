@@ -1,5 +1,12 @@
 # 发布清单
 
+当前公开 Release：
+
+- [v1.1.0 · 手机端](https://github.com/zrbyhelp/credential-typer/releases/tag/v1.1.0)
+- [v1.0.6 · Windows 桌面端](https://github.com/zrbyhelp/credential-typer/releases/tag/v1.0.6)
+
+版本变化记录见仓库根目录的 [CHANGELOG.md](../CHANGELOG.md)。
+
 1. 更新版本号：`app/pubspec.yaml` 的 marketing version 与 Android `versionCode`；桌面端更新 `CredentialTyper.App.csproj` 的版本属性和窗口标题。
 2. 运行完整测试：`dotnet test desktop/CredentialTyper.sln -c Release`、`flutter analyze`、`flutter test`。
 3. 构建 Windows 单文件和 Android APK，确认产物来自本次构建，不复用旧文件。
