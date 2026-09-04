@@ -1,0 +1,42 @@
+# Build output and local tooling caches
+**/bin/
+**/obj/
+**/build/
+**/.dart_tool/
+**/.gradle/
+**/.idea/
+**/.vscode/
+**/coverage/
+**/TestResults/
+
+# Generated Flutter/Android files
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/android/local.properties
+app/ios/Flutter/.last_build_id
+
+# Local release bundles and unpacked inspection directories
+dist/
+PLAN.md
+_*/
+**/_*/
+
+# IDE/user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.iml
+
+# Logs, probes, screenshots and temporary files
+*.log
+*.out
+*.err
+*.tmp
+*.bak
+_probe.*
+oldwindow*.png
+
+# OS files
+.DS_Store
+Thumbs.db

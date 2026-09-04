@@ -1,0 +1,40 @@
+name: credential_typer
+description: 跨设备凭据填充器 —— 手机端保险库 + Noise 加密传输，向 PC 注入账号密码。
+publish_to: "none"
+# Increment the Android version code so devices cannot silently keep the
+# previous release APK (which lacked the ML Kit R8 keep rules).
+# Bump both the marketing version and Android versionCode for the camera and
+# pairing fixes.  A higher code is important here: Android otherwise keeps a
+# previously installed APK (the old one exposed raw EndOfStream/NPE errors).
+version: 1.1.0+4
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # 与桌面 C# 端字节对齐的密码学：X25519 / ChaCha20-Poly1305 / SHA-256 / Argon2id / XChaCha20
+  cryptography: ^2.7.0
+  # 扫码配对。7.4.0 发布包在部分 CameraX 设备上会把
+  # cameraProviderFuture.get() 的初始化异常抛出到未捕获线程，导致
+  # `Object.getClass()`/黑屏叹号。固定到上游已合入错误回调的补丁提交。
+  mobile_scanner:
+    git:
+      url: https://github.com/juliansteenbakker/mobile_scanner.git
+      ref: e3afeba728897b9a508eb9a558b2aa54a8291d1b
+  # 保险库文件落盘位置
+  path_provider: ^2.1.4
+  # 手机静态私钥进 Android Keystore / iOS Keychain
+  flutter_secure_storage: ^9.2.2
+  # 加密备份的导出/导入文件选择（移动端走 SAF，免存储权限）
+  file_picker: ^8.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
