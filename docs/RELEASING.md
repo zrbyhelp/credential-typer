@@ -7,6 +7,9 @@
 
 版本变化记录见仓库根目录的 [CHANGELOG.md](../CHANGELOG.md)。
 
+后续每次 AI 辅助提交都必须同步更新 `CHANGELOG.md`。包含用户可见功能、修复或发布产物时，
+同一提交还应更新本文件，并在 GitHub Releases 中补充对应版本说明、下载链接和 SHA-256。
+
 1. 更新版本号：`app/pubspec.yaml` 的 marketing version 与 Android `versionCode`；桌面端更新 `CredentialTyper.App.csproj` 的版本属性和窗口标题。
 2. 运行完整测试：`dotnet test desktop/CredentialTyper.sln -c Release`、`flutter analyze`、`flutter test`。
 3. 构建 Windows 单文件和 Android APK，确认产物来自本次构建，不复用旧文件。
