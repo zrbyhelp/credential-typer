@@ -12,11 +12,20 @@
 
 安全边界：查看/复制密码和云备份是主动开启的功能；主密码不会上传，密码找回仍不可用。
 
+下载：[Android APK](https://github.com/zrbyhelp/credential-typer/releases/download/v1.1.0/CredentialTyper-Phone-v1.1.0.apk) ·
+[SHA-256 文件](https://github.com/zrbyhelp/credential-typer/releases/download/v1.1.0/CredentialTyper-Phone-v1.1.0.apk.sha256)
+
+SHA-256：`BDD4D1A3E37D46B948D7D9E052F4E2526F14E94950CBE7A4931E581F4496C27C`
+
 ## v1.0.6 · Windows 桌面端（2026-09-04）
 
 - 将桌面端 ChaCha20-Poly1305 改为纯托管实现，兼容 Windows 10（不再依赖 Windows 11 系统算法）。
 - 保持与手机端 Noise IK/KK、官方向量和现有协议完全字节兼容。
 - 单文件自包含发布，目标电脑无需预装 .NET 运行时。
+
+下载：[Windows x64 ZIP](https://github.com/zrbyhelp/credential-typer/releases/download/v1.0.6/CredentialTyper-Desktop-win-x64-v1.0.6.zip)
+
+SHA-256：`8FCB07C29A38E6966E354F67DEDED432AD88157B13627E69D399B67D59E862D9`
 
 ## 更早版本
 
