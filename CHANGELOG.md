@@ -21,4 +21,3 @@
 ## 更早版本
 
 早期构建产物未作为公开 Release 发布；协议和安全模型以 [PROTOCOL.md](PROTOCOL.md) 为准。
-
